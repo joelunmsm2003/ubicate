@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "email": "joelaaa@gmail.com",
+      "phone": 980729169,
+      "username": "johndoe",
+      "password": 123,
+      "type": 1,
+      "id": 4
+    }
+  ],
+  "hotel": [
+    {
+      "name": "PeruLandia",
+      "description": "El mejor hotel de Cuzcsso",
+      "address": 123,
+      "tripadvisor": 1,
+      "start": 3,
+      "id": 1
+    },
+    {
+      "name": "PeruLandia",
+      "description": "El mejor hotel de Cuzco",
+      "address": 123,
+      "tripadvisor": 1,
+      "start": 3,
+      "id": 2
+    }
+  ],
+  "interest": [
+    {
+      "id": 1,
+      "name": "Gastronomia"
+    },
+    {
+      "name": "Pesca",
+      "id": 2
+    }
+  ]
+}

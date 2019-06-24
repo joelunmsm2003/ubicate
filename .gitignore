@@ -1,0 +1,7 @@
+node_modules
+chooseba/settings.py
+runstage.sh
+runwaqa.sh
+run.sh
+
+sendgrid.env

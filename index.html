@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	# remember to update the version number!
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json-schema-faker/0.3.1/json-schema-faker.min.js"></script>
+</head>
+<body>
+
+<span>JSON Schema faker - demo - using cdnjs</span>
+<script type="text/javascript">
+	
+var jsf = require('json-schema-faker');
+
+var schema = {
+  type: 'object',
+  properties: {
+    user: {
+      type: 'object',
+      properties: {
+        id: {
+          $ref: '#/definitions/positiveInt'
+        },
+        name: {
+          type: 'string',
+          faker: 'name.findName'
+        },
+        email: {
+          type: 'string',
+          format: 'email',
+          faker: 'internet.email'
+        }
+      },
+      required: ['id', 'name', 'email']
+    }
+  },
+  required: ['user'],
+  definitions: {
+    positiveInt: {
+      type: 'integer',
+      minimum: 0,
+      exclusiveMinimum: true
+    }
+  }
+};
+
+var sample = jsf(schema);
+
+console.log(sample.user.name);
+// output: John Doe
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json-schema-faker/0.3.1/json-schema-faker.min.js"></script>
+</body>
+</html>
