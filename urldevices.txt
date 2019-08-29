@@ -1,0 +1,1 @@
+{"csv_file_url":"https://onesignal.s3.amazonaws.com/csv_exports/f9ffbe5b-5c2d-49c8-911a-9de515621b4e/users_3dd9bb49600ec3afb064e77670b43ac5_2019-08-29.csv.gz"}
